@@ -14,10 +14,11 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt": "^2.0.0",
+    "vuetify": "^2.2.25"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
