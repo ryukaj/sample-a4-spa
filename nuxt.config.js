@@ -2,6 +2,11 @@ const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'client/',  
+  /** Vue Setting */
+  vue: {
+    devtools: true
+  },
   /*
    ** Headers of the page
    */
@@ -51,14 +56,11 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
+  /** vuetify module configuration */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -76,9 +78,8 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    /* You can extend webpack config here */
+    hardSource: true, //実験的機能
     extend(config, ctx) {}
   }
 }
