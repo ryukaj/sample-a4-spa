@@ -12,6 +12,11 @@
             v-icon mdi-charity 
           v-list-item-content
             v-list-item-title sample
+        v-list-item(to='/parallax' nuxt)
+          v-list-item-action
+            v-icon mdi-charity 
+          v-list-item-content
+            v-list-item-title Parallax
     v-app-bar(app)
       v-app-bar-nav-icon(@click.stop="drawer = !drawer")
       v-toolbar-title A4 Header
