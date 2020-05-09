@@ -11,7 +11,7 @@
         v-list-item
           v-list-item-content
             v-list-item-title Try
-    v-app-bar(app v-if='parallax.subHeight < position')
+    v-app-bar(app v-if='parallax.subHeight < position' clipped-right)
       v-toolbar-title forAdvice
       v-spacer
       v-app-bar-nav-icon(@click.stop="drawerRight = !drawerRight")
@@ -37,7 +37,7 @@
 export default {
   layout: 'guest',
   data: () => ({
-    drawerRight: null,
+    drawerRight: false,
     parallax: {
       mainHeight: 600,
       subHeight: 500
