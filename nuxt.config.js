@@ -49,7 +49,18 @@ module.exports = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    [
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'default',
+        breakpoints: {
+          mobile: 666,
+          tablet: 969,
+          desktop: Infinity          
+        }
+      }
+    ]
   ],
   /*
    ** Axios module configuration

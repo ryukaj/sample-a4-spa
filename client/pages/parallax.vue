@@ -44,8 +44,8 @@ export default {
     },
     position: 0
   }),
-  created() {},
-  mounted() {
+  created () {},
+  mounted () {
     this.$set(this.parallax, 'mainHeight', window.innerHeight)
     this.$set(this.parallax, 'subHeight', window.innerHeight - 100)
     document.onscroll = (e) => {

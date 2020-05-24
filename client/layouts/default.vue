@@ -9,14 +9,19 @@
             v-list-item-title Home
         v-list-item(to='/inspire' nuxt)
           v-list-item-action
-            v-icon mdi-charity 
+            v-icon mdi-charity
           v-list-item-content
             v-list-item-title sample
         v-list-item(to='/parallax' nuxt)
           v-list-item-action
-            v-icon mdi-charity 
+            v-icon mdi-charity
           v-list-item-content
             v-list-item-title Parallax
+        v-list-item(to='/account/register' nuxt)
+          v-list-item-action
+            v-icon mdi-charity
+          v-list-item-content
+            v-list-item-title landing
     v-app-bar(app)
       v-app-bar-nav-icon(@click.stop="drawer = !drawer")
       v-toolbar-title A4 Header

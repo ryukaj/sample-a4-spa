@@ -1,7 +1,7 @@
 <template lang="pug">
   article
     v-row
-      v-col(cols=12 md=6) 
+      v-col(cols=12 md=6)
         <!-- Carousel TODO: 切り出し -->
         v-carousel(height='360')
           v-carousel-item
