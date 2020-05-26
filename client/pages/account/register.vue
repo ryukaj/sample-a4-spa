@@ -14,7 +14,7 @@ export default {
   data: () => ({}),
   created () {},
   mounted () {
-    this.$refs.modal.open(0, true)
+    this.$refs.modal.open(1, true)
   }
 }
 </script>

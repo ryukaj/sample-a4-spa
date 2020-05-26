@@ -59,10 +59,10 @@ export default {
     }
   },
   created () {
-    alert('expected created')
+    console.log('expected created')
   },
   mounted () {
-    alert('expected mounted')
+    console.log('expected mounted')
   }
 }
 </script>
