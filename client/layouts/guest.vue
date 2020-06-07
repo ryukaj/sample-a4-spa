@@ -17,8 +17,8 @@
     v-content
       transition(name='page')
         nuxt
-    v-footer(app color='primary')
-      span A4 Footer
+    v-footer.l-footer(app)
+      span A4
 </template>
 
 <script>
@@ -89,6 +89,11 @@ export default {
       display: flex;
     }
   }
+}
+.l-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f39800 !important;
 }
 </style>
 
