@@ -4,7 +4,7 @@
       v-row.l-header__row
         .l-header__row__left
           .l-header__row__left__search
-            v-toolbar-title.l-header__row__left__logo
+            v-toolbar-title.l-header__row__left__logo(to='/' nuxt)
             v-text-field(solo-inverted flat hide-details label="Search.." prepend-inner-icon="mdi-magnify" v-if='!isMobile')
           .l-header__row__left__gradation(v-if='!isMobile')
             .gradation.type1
@@ -15,9 +15,8 @@
           btn-two-stage(upper='New Entry' lower='新規登録はこちら' linkto='/account/register')
           btn-two-stage(upper='Try' lower='登録せずに見たい方はこちら')
     v-content
-      v-container
-        transition(name='page')
-          nuxt
+      transition(name='page')
+        nuxt
     v-footer(app color='primary')
       span A4 Footer
 </template>
