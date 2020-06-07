@@ -53,7 +53,7 @@ export default {
     &__message {
       padding: 1rem 2rem;
       color: #fff;
-      font-size: xxx  -large;
+      font-size: xxx-large;
       > div {
         margin-bottom: 0.5rem
       }
