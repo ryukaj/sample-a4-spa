@@ -4,7 +4,7 @@
       v-list
         v-list-item
           v-avatar
-            v-img(src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg")
+            v-img(src="/images/layout/pcandcoffee.jpg")
           v-list-item-title 〇〇〇〇さん
         v-list-item(to='/' nuxt)
           v-list-item-action
